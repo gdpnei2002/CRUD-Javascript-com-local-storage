@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>Teste SoftMakers</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1 class="header-title">Aluguel de carros</h1>
+    </header>
+    <!-- LER CARROS CADASTRADOS -->
+    <main>
+        <button type="button" class="button blue" id="cadastrarCarro">Novo cadastro</button>
+        <table id="tableCarro" class="records">
+            <thead>
+                <tr>
+                    
+                    <th>Nome do carro</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Disponibilidade</th>
+                    <th>Ação</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <!-- MODAL DE CADASTRO -->
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Cadastro de carros</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do carro"
+                        required>
+                    <input type="text" id="marca" class="modal-field" placeholder="Marca" required>
+                    <input type="text" id="modelo" class="modal-field" placeholder="Modelo" required>
+                    
+                    <select id="disponibilidade" name="ndisponibilidade">
+                        <option value="Disponibilidade">Disponibilidade</option>
+                        <option value="Disponível">Disponível</option>
+                        <option value="Indisponível">Indisponível</option>           
+                    </select>
+        
+                    
+                </form>
+                <!-- OPÇÕES DO MODAL DE CADASTRO -->
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
